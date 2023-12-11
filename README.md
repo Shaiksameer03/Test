@@ -73,4 +73,80 @@
 
 </body>
 </html>
-￼Enter
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Your Restaurant Name</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 56px; /* Adjust this value according to your fixed navbar height */
+        }
+        .navbar {
+            background-color: #333;
+        }
+        .navbar-dark .navbar-toggler-icon {
+            background-color: #fff;
+        }
+        .dropdown-menu {
+            background-color: #333;
+        }
+        .dropdown-item {
+            color: #fff;
+        }
+        .jumbotron {
+            text-align: center;
+            background-color: #f8f9fa;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <a class="navbar-brand" href="#">Your Company Name</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Menu
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#" onclick="showItem('chicken')">Chicken</a>
+                    <a class="dropdown-item" href="#" onclick="showItem('beef')">Beef</a>
+                    <a class="dropdown-item" href="#" onclick="showItem('sushi')">Sushi</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="jumbotron">
+    <h1 class="display-4">Page Heading</h1>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    function showItem(item) {
+        // Add logic to display information and image for the selected item
+        console.log(`Displaying information for ${item}`);
+    }
+</script>
+</body>
+</html>
+
